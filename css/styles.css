@@ -1,0 +1,28 @@
+
+.button-layout {
+  display: flex;
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 250px;
+  width: 250px;
+}
+
+.operators {
+  display: grid;
+  height: 250px;
+  width: 50px;
+}
+
+.numpad div,
+.operators div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid darkslategray;
+}
+
+
+
