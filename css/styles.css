@@ -1,4 +1,8 @@
 
+.display {
+  width: 298px
+}
+
 .button-layout {
   display: flex;
 }
@@ -16,12 +20,19 @@
   width: 50px;
 }
 
+.display,
 .numpad div,
 .operators div {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid darkslategray;
+}
+
+.numpad div:hover,
+.operators div:hover {
+  background-color: rgb(107, 60, 218);
+  transform: scale(1.1);
 }
 
 
