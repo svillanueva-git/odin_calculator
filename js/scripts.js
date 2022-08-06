@@ -27,14 +27,16 @@ selectedNum.forEach((number) => {
       userNum1 = parseInt(number.innerHTML);
     } else if ((userNum1 != 0) && (userNum2 == 0)) {
       userNum2 = parseInt(number.innerHTML);
-    } 
+    } else if (userNum1 == displayValue) {
+      userNum2 = parseInt(number.innerHTML);
+    }
   });
 });
 
 const selectedOp = document.querySelectorAll('div.operators > div');
 selectedOp.forEach((operator) => {
   operator.addEventListener('click', () => {
-    if (operator.className == "equal") return;
+    if (operator.className == "equal" || operator.className == "clear") return;
     userOperator = operator.className;
   })
 })
@@ -42,5 +44,15 @@ selectedOp.forEach((operator) => {
 const calculate = document.querySelector('.equal');
 calculate.addEventListener('click', () => {
   displayValue = operate(userOperator, userNum1, userNum2);
+  userNum1 = displayValue;
+  displayResult();
+})
+
+const clearDisplay = document.querySelector('.clear');
+clearDisplay.addEventListener('click', () => {
+  displayValue = 0;
+  userNum1 = 0;
+  userNum2 = 0;
+  userOperator = "";
   displayResult();
 })
