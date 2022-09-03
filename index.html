@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Geo&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,43 +12,44 @@
 </head>
 <body>
 
-  <div class="display">
-    <p>0</p>
-  </div>
+  <div class="table">
 
-  <div class="button-layout">
-
-    <div class="numpad">
-      <div class="seven">7</div>
-      <div class="eight">8</div>
-      <div class="nine">9</div>
-
-      <div class="four">4</div>
-      <div class="five">5</div>
-      <div class="six">6</div>
-      
-      <div class="one">1</div>
-      <div class="two">2</div>
-      <div class="three">3</div>
-
-      <div class="change-sign">+/-</div>
-      <div class="zero">0</div>
-      <div class="decimal">.</div>
+    <div class="display">
+      <p>0</p>
     </div>
 
-    <div class="operators">
-      <div class="clear">CLR</div>
-      <div class="divide">DIV</div>
-      <div class="multiply">MUL</div>
-      <div class="subtract">-</div>
-      <div class="add">+</div>
-      <div class="equal">=</div>
-    </div>
+    <div class="button-layout">
+      <div class="numpad">
+        <div class="seven">7</div>
+        <div class="eight">8</div>
+        <div class="nine">9</div>
 
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+        
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+
+        <div class="change-sign">+/-</div>
+        <div class="zero">0</div>
+        <div class="decimal">.</div>
+      </div>
+
+      <div class="operators">
+        <div id="clear">C</div>
+        <div class="divide">/</div>
+        <div class="multiply">*</div>
+        <div class="subtract">-</div>
+        <div class="add">+</div>
+        <div class="equal">=</div>
+      </div>
+    </div>
+  
   </div>
 
 
-
-  <script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

@@ -25,10 +25,16 @@ selectedNum.forEach((number) => {
   number.addEventListener('click', () => {
     if (userNum1 == 0) {
       userNum1 = parseInt(number.innerHTML);
+      displayValue = userNum1;
+      displayResult();
     } else if ((userNum1 != 0) && (userNum2 == 0)) {
       userNum2 = parseInt(number.innerHTML);
+      displayValue = userNum2;
+      displayResult();
     } else if (userNum1 == displayValue) {
       userNum2 = parseInt(number.innerHTML);
+      displayValue = userNum2;
+      displayResult();
     }
   });
 });
@@ -48,7 +54,7 @@ calculate.addEventListener('click', () => {
   displayResult();
 })
 
-const clearDisplay = document.querySelector('.clear');
+const clearDisplay = document.querySelector('#clear');
 clearDisplay.addEventListener('click', () => {
   displayValue = 0;
   userNum1 = 0;

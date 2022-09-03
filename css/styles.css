@@ -1,7 +1,29 @@
+body {
+  font-family: 'Arvo', serif;
+  font-size: small;
+}
+
+.table {
+  background-color: #9dd2ea;
+  float: left;
+  border-radius: 3px;
+  padding: 4px;
+}
 
 .display {
-  width: 298px;
-  height: 52px;
+  width: auto;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px 0 darkslategray;
+  margin: 6px;
+  background-color: #f1faeb;
+  font-size: larger;
+}
+
+.display:hover {
+  box-shadow: 0 4px rgba(0,0,0,0.2);
 }
 
 .button-layout {
@@ -17,23 +39,34 @@
 
 .operators {
   display: grid;
-  height: 250px;
-  width: 50px;
+  height: 249px;
+  width: 60px;
 }
 
-.display,
+#clear {
+  background-color: #ff9fa8;
+}
+
 .numpad div,
 .operators div {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid darkslategray;
+  margin: 5px;
+  background-color: seashell;
+  border-radius: 1px;
+}
+
+.operators div {
+  background-color: #f1ff92;
 }
 
 .numpad div:hover,
 .operators div:hover {
-  background-color: rgb(107, 60, 218);
-  transform: scale(1.1);
+  color: #495069;
+  background-color: #8f5fda;
+  transform: scale(1.1);  
+  box-shadow: 0 4px rgba(0,0,0,0.2);
 }
 
 
